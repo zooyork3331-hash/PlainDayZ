@@ -68,6 +68,25 @@
     const visual = node('div', 'server-visual');
     visual.append(node('span', 'server-number', String(index + 1).padStart(2, '0')),
                   node('span', 'server-badge', server.status || 'DETAILS SOON'));
+    // Click or keyboard-activate the card to open this server's dedicated page.
+    // The copy-address button remains independently usable.
+    const page = typeof server.page === 'string' && /^[a-z0-9-]+\\.html$/i.test(server.page) ? server.page : '';
+    if (page) {
+      card.classList.add('server-card-clickable');
+      card.tabIndex = 0;
+      card.setAttribute('role', 'link');
+      card.setAttribute('aria-label', 'Explore ' + safeText(server.name) + ' server details, tips and mods');
+      card.addEventListener('click', event => {
+        if (event.target.closest('button, a')) return;
+        window.location.href = page;
+      });
+      card.addEventListener('keydown', event => {
+        if ((event.key === 'Enter' || event.key === ' ') && event.target === card) {
+          event.preventDefault();
+          window.location.href = page;
+        }
+      });
+    }
     const content = node('div', 'server-content');
     content.append(node('div', 'server-subtitle', server.subtitle),node('h3', '', server.name));
     const specs = node('div', 'server-specs');
@@ -104,6 +123,11 @@
     });
     footer.append(ip, copy);
     content.append(footer);
+    if (page) {
+      const details = node('a', 'server-details-link', 'EXPLORE SERVER · TIPS & MODS ↗');
+      details.href = page;
+      content.append(details);
+    }
     card.append(visual, content);
     serverList.append(card);
   });
