@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#08090b">
+  <meta name="description" content="PLAIN DAYZ — a DayZ community. Explore servers, discover events, meet the staff, and join the community.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="PLAIN DAYZ | The Community Survives">
+  <meta property="og:description" content="Enter the wasteland. Find your people. Explore our DayZ servers and join the community.">
+  <meta property="og:image" content="assets/social-preview.png">
+  <title>PLAIN DAYZ | The Community Survives</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800;900&family=Barlow:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="config.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="site-shell">
+    <header class="site-header" id="top">
+      <div class="container header-inner">
+        <a class="brand" href="#top" aria-label="PLAIN DAYZ home">
+          <img class="brand-mark" src="assets/plain-dayz-logo.webp" alt="">
+          <span class="brand-name">PLAIN <strong>DAYZ</strong><small>THE COMMUNITY SURVIVES</small></span>
+        </a>
+        <button class="menu-toggle" type="button" aria-controls="primary-nav" aria-expanded="false" aria-label="Open navigation">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+          <a href="#servers">SERVERS</a>
+          <a href="#events">EVENTS</a>
+          <a href="#staff">STAFF</a>
+          <a href="#support">SUPPORT</a>
+          <a id="nav-discord" class="nav-discord" href="#community">JOIN DISCORD <span aria-hidden="true">↗</span></a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-grid" aria-hidden="true"></div>
+        <div class="hero-glow" aria-hidden="true"></div>
+        <div id="embers" class="embers" aria-hidden="true"></div>
+        <div class="container hero-content">
+          <div class="hero-copy">
+            <div class="eyebrow"><span class="eyebrow-line"></span><span id="site-eyebrow">THE COMMUNITY SURVIVES</span><span class="eyebrow-line"></span></div>
+            <p class="hero-pretitle" id="hero-first">WELCOME TO</p>
+            <h1 id="hero-title">THE <span>WASTELAND.</span></h1>
+            <p class="hero-tagline" id="hero-tagline">A place for survivors, close calls, fresh starts, and stories worth telling.</p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#servers">EXPLORE SERVERS <span aria-hidden="true">↗</span></a>
+              <a class="btn btn-ghost" href="#community">JOIN THE COMMUNITY <span aria-hidden="true">→</span></a>
+            </div>
+            <div class="hero-meta" aria-label="Community highlights">
+              <div class="hero-meta-item"><span class="meta-icon" aria-hidden="true">◈</span><div><strong>DAYZ COMMUNITY</strong><small>YOUR NEXT STORY STARTS HERE</small></div></div>
+              <div class="hero-meta-separator"></div>
+              <div class="hero-meta-item"><span class="meta-icon" aria-hidden="true">✳</span><div><strong>EVENTS & UPDATES</strong><small>STAY IN THE LOOP</small></div></div>
+            </div>
+          </div>
+          <div class="hero-art" aria-label="PLAIN DAYZ metallic orange logo">
+            <div class="art-halo halo-one" aria-hidden="true"></div>
+            <div class="art-halo halo-two" aria-hidden="true"></div>
+            <img class="hero-logo" src="assets/plain-dayz-logo.webp" alt="PLAIN DAYZ emblem with scorched steel lettering and fiery orange embers">
+            <div class="art-caption"><span>EST. IN THE WASTELAND</span><span class="crosshair" aria-hidden="true">⊕</span></div>
+          </div>
+        </div>
+        <div class="hero-bottom" aria-hidden="true"><div class="container hero-bottom-inner"><span>SCROLL TO EXPLORE</span><span class="scroll-tick"></span><span>01 / PLAIN DAYZ</span></div></div>
+      </section>
+
+      <div class="ticker" aria-label="Plain DayZ community slogan"><div class="ticker-track"><span>NO SCRIPT. JUST SURVIVAL.</span><b>✳</b><span>YOUR STORY. YOUR RULES.</span><b>✳</b><span>FIND YOUR PEOPLE.</span><b>✳</b><span>NO SCRIPT. JUST SURVIVAL.</span><b>✳</b><span>YOUR STORY. YOUR RULES.</span><b>✳</b></div></div>
+
+      <section class="section section-servers" id="servers" aria-labelledby="servers-title">
+        <div class="container">
+          <div class="section-top">
+            <div><div class="kicker"><span>01</span> / CHOOSE YOUR WORLD</div><h2 id="servers-title">OUR <em>SERVERS</em><span class="period">.</span></h2></div>
+            <p>Every world is a new story. Find the experience that fits the way you survive.</p>
+          </div>
+          <div id="server-list" class="server-grid" aria-live="polite"></div>
+          <div class="section-footnote"><span class="small-cross" aria-hidden="true">✳</span> Server connection information will be published when available.</div>
+        </div>
+      </section>
+
+      <section class="section events-section" id="events" aria-labelledby="events-title">
+        <div class="container">
+          <div class="section-top">
+            <div><div class="kicker"><span>02</span> / DON'T MISS A THING</div><h2 id="events-title">THE <em>EVENT BOARD</em><span class="period">.</span></h2></div>
+            <p>Community nights, special events, and announcements. There's always another story coming.</p>
+          </div>
+          <div class="events-layout"><div class="events-list" id="event-list"></div>
+            <aside class="events-aside"><div class="signal" aria-hidden="true"><span></span><span></span><span></span><span></span></div><p class="aside-kicker">STAY CONNECTED</p><h3>BE THERE<br>WHEN IT <span>HAPPENS.</span></h3><p>Event details and announcements live in our Discord community.</p><a id="events-discord" class="text-link" href="#community">OPEN DISCORD <span>↗</span></a></aside>
+          </div>
+        </div>
+      </section>
+
+      <section class="section staff-section" id="staff" aria-labelledby="staff-title">
+        <div class="container">
+          <div class="section-top"><div><div class="kicker"><span>03</span> / BEHIND THE SCENES</div><h2 id="staff-title">MEET THE <em>TEAM</em><span class="period">.</span></h2></div><p>The people helping keep the lights on, the servers running, and the community welcoming.</p></div>
+          <div class="staff-grid" id="staff-list"></div>
+        </div>
+      </section>
+
+      <section class="section community-section" id="community" aria-labelledby="community-title">
+        <div class="container">
+          <div class="community-panel"><div class="community-sigil" aria-hidden="true">✳</div><div class="community-copy"><div class="kicker"><span>04</span> / THE STORY CONTINUES</div><h2 id="community-title">DON'T SURVIVE <em>ALONE.</em></h2><p>Meet the community, get server news, and find people to survive with. Your next adventure starts with a hello.</p><div class="community-buttons"><a id="community-discord" class="btn btn-primary" href="#support">JOIN OUR DISCORD <span>↗</span></a><a class="btn btn-dark" href="#support">NEED HELP? <span>→</span></a></div></div><div class="community-watermark" aria-hidden="true">PD.</div></div>
+        </div>
+      </section>
+
+      <section class="support-section" id="support" aria-labelledby="support-title">
+        <div class="container support-grid"><div class="support-info"><div class="kicker"><span>05</span> / WE'VE GOT YOUR BACK</div><h2 id="support-title">NEED <em>SUPPORT?</em></h2><p>Having issues connecting, need help on a server, or want to speak to the team? Use the support link for assistance.</p></div><div class="support-action"><span class="support-icon" aria-hidden="true">✛</span><div><strong>PLAYER SUPPORT</strong><p>Reach out to the PLAIN DAYZ team.</p></div><a id="support-link" class="btn btn-outline" href="#support">CONTACT SUPPORT <span>↗</span></a></div></div>
+      </section>
+    </main>
+
+    <footer class="site-footer"><div class="container footer-top"><div class="footer-brand"><img src="assets/plain-dayz-logo.webp" alt=""><div><strong>PLAIN <span>DAYZ</span></strong><small id="footer-description">Built by survivors. For survivors.</small></div></div><div class="footer-links"><a href="#servers">SERVERS</a><a href="#events">EVENTS</a><a href="#staff">STAFF</a><a href="#support">SUPPORT</a></div><a href="#top" class="back-to-top" aria-label="Back to top">↑</a></div><div class="container footer-bottom"><span>© <span id="year"></span> PLAIN DAYZ. ALL RIGHTS RESERVED.</span><span>INDEPENDENT DAYZ COMMUNITY · NOT AFFILIATED WITH BOHEMIA INTERACTIVE.</span></div></footer>
+  </div>
+</body>
+</html>
