@@ -289,3 +289,9 @@ h1,h2,h3,p{overflow-wrap:break-word}
  .footer-bottom{flex-direction:column;gap:10px;font-size:9px}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+
+/* Server cards now lead to individual server hubs */
+.server-card-clickable{cursor:pointer}
+.server-card-clickable:focus-visible{outline:2px solid var(--fire-light);outline-offset:4px;border-color:var(--fire)}
+.server-details-link{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:19px;padding:14px 17px;border:1px solid rgba(244,106,46,.65);color:var(--fire-light);font:800 15px var(--font-display);letter-spacing:1.2px;transition:background .2s,color .2s}
+.server-details-link:hover,.server-details-link:focus-visible{background:var(--fire);color:#12100e}
