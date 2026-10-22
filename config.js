@@ -23,6 +23,10 @@ window.PLAIN_DAYZ_CONFIG = {
   servers: [
     {
       name: "BANOV",
+      slug: "banov",
+      page: "banov.html",
+      tips: [], // Add { title: "Tip title", description: "Tip details" }
+      mods: [], // Add "Mod name" or { name: "Mod name", url: "https://steamcommunity.com/sharedfiles/filedetails/?id=..." }
       subtitle: "PLAIN DAYZ SERVER",
       map: "BANOV",
       playstyle: "GAMEPLAY DETAILS COMING SOON",
@@ -34,6 +38,10 @@ window.PLAIN_DAYZ_CONFIG = {
     },
     {
       name: "ONFORIN",
+      slug: "onforin",
+      page: "onforin.html",
+      tips: [],
+      mods: [],
       subtitle: "PLAIN DAYZ SERVER",
       map: "ONFORIN",
       playstyle: "GAMEPLAY DETAILS COMING SOON",
