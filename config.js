@@ -22,26 +22,26 @@ window.PLAIN_DAYZ_CONFIG = {
   // Add, remove, or edit server objects. No fake live statuses are shown.
   servers: [
     {
-      name: "SERVER ONE",
-      subtitle: "THE FIRST CHAPTER",
-      map: "MAP TO BE ANNOUNCED",
-      playstyle: "PLAYSTYLE TO BE ANNOUNCED",
-      status: "COMING SOON", // manually updated, not real-time
-      description: "Your first server description goes here. Describe the map, gameplay style, mods, and what makes this world worth surviving.",
-      features: ["SERVER INFO PENDING", "COMMUNITY FOCUSED", "DETAILS SOON"],
-      address: "", // e.g. "123.123.123.123"
-      port: ""     // e.g. "2302"
+      name: "BANOV",
+      subtitle: "PLAIN DAYZ SERVER",
+      map: "BANOV",
+      playstyle: "GAMEPLAY DETAILS COMING SOON",
+      status: "ADDRESS AVAILABLE", // not a real-time online status
+      description: "Explore the Banov server. Use the connection address below to find us in DayZ. More details will be announced soon.",
+      features: ["DIRECT CONNECTION", "MORE DETAILS SOON"],
+      address: "5.226.142.46",
+      port: "2491"
     },
     {
-      name: "SERVER TWO",
-      subtitle: "ANOTHER WAY TO SURVIVE",
-      map: "MAP TO BE ANNOUNCED",
-      playstyle: "PLAYSTYLE TO BE ANNOUNCED",
-      status: "COMING SOON",
-      description: "A second home for a different kind of survivor. Swap this out for real information once the server is ready.",
-      features: ["MORE TO EXPLORE", "NEW ADVENTURES", "DETAILS SOON"],
-      address: "",
-      port: ""
+      name: "ONFORIN",
+      subtitle: "PLAIN DAYZ SERVER",
+      map: "ONFORIN",
+      playstyle: "GAMEPLAY DETAILS COMING SOON",
+      status: "ADDRESS AVAILABLE", // not a real-time online status
+      description: "Explore the Onforin server. Use the connection address below to find us in DayZ. More details will be announced soon.",
+      features: ["DIRECT CONNECTION", "MORE DETAILS SOON"],
+      address: "213.166.84.4",
+      port: "2302"
     }
   ],
 
