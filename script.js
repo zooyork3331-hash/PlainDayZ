@@ -70,7 +70,7 @@
                   node('span', 'server-badge', server.status || 'DETAILS SOON'));
     // Click or keyboard-activate the card to open this server's dedicated page.
     // The copy-address button remains independently usable.
-    const page = typeof server.page === 'string' && /^[a-z0-9-]+\\.html$/i.test(server.page) ? server.page : '';
+    const page = typeof server.page === 'string' && /^[a-z0-9-]+\.html$/i.test(server.page) ? server.page : '';
     if (page) {
       card.classList.add('server-card-clickable');
       card.tabIndex = 0;
