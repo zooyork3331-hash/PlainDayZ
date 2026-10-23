@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#08090b">
+<title>Survivor Field Guide | PLAIN DAYZ</title>
+<meta name="description" content="Shared PLAIN DAYZ guides: Terje Medicine, skills, keycards, DNA workbench, drug running, house kits and survival tips.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800;900&family=Barlow:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="server-pages.css">
+<style>
+.guide-hero{padding:75px 0 80px;background:radial-gradient(ellipse at 85% 20%,rgba(234,76,29,.21),transparent 55%),#111113;border-bottom:1px solid #54392d}
+.guide-hero h1{font:900 clamp(58px,9vw,118px)/.85 var(--font-display);margin:18px 0;color:#f5f0e8}
+.guide-hero h1 span{color:var(--fire)}
+.guide-lead{font-size:17px;color:#bfb7b0;max-width:780px}
+.guide-jump{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px}
+.guide-jump a{padding:11px 16px;border:1px solid #79503b;color:#ffad79;background:#211a17;font:800 14px var(--font-display);letter-spacing:1px}
+.guide-jump a:hover{background:#f46a2e;color:#14100e}
+.guide-section{padding:72px 0;border-bottom:1px solid var(--line);scroll-margin-top:25px}
+.guide-section:nth-of-type(odd){background:#111213}
+.guide-section h2{font:900 clamp(42px,6vw,72px)/.95 var(--font-display);margin:0 0 15px}
+.guide-section h2 span{color:var(--fire)}
+.guide-section>div>p{max-width:880px;color:#bfb7b0}
+.guide-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:25px}
+.guide-card{background:#1b1c1e;border:1px solid #4b3830;padding:24px}
+.guide-card h3{font:900 30px var(--font-display);margin:0 0 12px;color:#ff925a}
+.guide-card p,.guide-card li{color:#ccc2ba;font-size:14px;line-height:1.7}
+.guide-card ul,.guide-card ol{padding-left:22px}
+.guide-card li+li{margin-top:7px}
+.guide-note{border-left:3px solid #f46a2e;background:#291d17;color:#e4cdc1;padding:16px 20px;margin:20px 0}
+.guide-warning{border-left-color:#ffb02e;background:#342713}
+.house-table{width:100%;border-collapse:collapse;min-width:630px;text-align:left}
+.house-table th{color:#f78e59;background:#261a16;font:800 15px var(--font-display);letter-spacing:.5px}
+.house-table td,.house-table th{padding:13px;border-bottom:1px solid #544038}
+.house-table td{font-size:14px;color:#e0d7d0}
+.house-table tbody tr:nth-child(odd){background:#1b1c1d}
+.house-table-wrap{overflow-x:auto;border:1px solid #544038;margin-top:25px}
+.med-columns{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px;margin-top:25px}
+.med-category{padding:20px;background:#1a1b1e;border:1px solid #43352e}
+.med-category h3{font:900 25px var(--font-display);margin:0 0 8px;color:#ff9550}
+.med-category p{color:#c4bbb4;font-size:13px;line-height:1.65;margin:0}
+.med-category .med-note{margin-top:8px;color:#988d86;font-size:12px}
+.guide-source{display:inline-flex;margin-top:17px;gap:9px;color:#ffab7a;font:800 15px var(--font-display);letter-spacing:.5px}
+.guide-source:hover{text-decoration:underline}
+@media(max-width:800px){.med-columns{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.guide-grid,.med-columns{grid-template-columns:1fr}.guide-hero{padding:50px 0}.guide-section{padding:55px 0}}
+</style></head>
+<body class="server-hub-body">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header server-hub-header"><div class="container header-inner">
+<a class="brand" href="index.html"><img class="brand-mark" src="assets/plain-dayz-logo.webp" alt=""><span class="brand-name">PLAIN <strong>DAYZ</strong><small>THE COMMUNITY SURVIVES</small></span></a>
+<nav class="server-top-nav"><a href="index.html#servers">ALL SERVERS</a><a href="#medicine">MEDICINE</a><a href="#workbench">WORKBENCH</a><a href="#housing">BUILDING</a></nav>
+</div></header>
+<main id="main">
+<section class="guide-hero"><div class="container">
+<div class="hub-kicker">ALL FOUR SERVERS · SHARED RESOURCE</div>
+<h1>SURVIVOR <span>FIELD GUIDE.</span></h1>
+<p class="guide-lead">One place for tips, reference material and community-supplied instructions for Arsteinen, Banov, DeerIsle and Onforin. Exact mechanics may vary with server settings or mod updates.</p>
+<div class="guide-jump"><a href="#medicine">MEDICINE</a><a href="#skills">TERJE SKILLS</a><a href="#workbench">DNA WORKBENCH</a><a href="#drug-running">DRUG RUNNING</a><a href="#housing">WOODEN HOUSES</a><a href="#survival">SURVIVAL BASICS</a></div>
+</div></section>
+<section class="guide-section" id="medicine"><div class="container">
+<div class="hub-kicker">01 / MEDICAL REFERENCE</div><h2>TERJE <span>MEDICINE.</span></h2>
+<p>Terje Medicine adds more involved diseases, injuries, medicines, treatments and medical items. The community-provided medicine field-guide graphic organizes treatment categories, item forms and levels. This is game information, not real-world medical advice.</p>
+<div class="med-columns">
+<div class="med-category"><h3>Cold / Pneumonia</h3><p>Respiratory-illness remedies, symptom relief and infection-focused items.</p></div>
+<div class="med-category"><h3>Pain</h3><p>Pain management drugs appear in multiple levels and forms.</p></div>
+<div class="med-category"><h3>Food Poisoning</h3><p>Digestive illness and contamination treatments.</p></div>
+<div class="med-category"><h3>Sepsis</h3><p>Severe infection and medical treatment category.</p></div>
+<div class="med-category"><h3>Radiation Poisoning</h3><p>Radiation-specific protection and treatment items, when applicable.</p></div>
+<div class="med-category"><h3>Hematomas</h3><p>Bruise and swelling-related treatments.</p></div>
+<div class="med-category"><h3>Zombie Virus</h3><p>Modded viral status and vaccine-related items.</p></div>
+<div class="med-category"><h3>Concussion</h3><p>Head-injury-related treatments and symptoms.</p></div>
+<div class="med-category"><h3>Chemical Poisoning</h3><p>Chemical exposure category and protective treatment items.</p></div>
+<div class="med-category"><h3>Rabies</h3><p>Animal-bite disease treatment category.</p></div>
+<div class="med-category"><h3>Mental Health</h3><p>Modded mental-health status and remedies.</p></div>
+<div class="med-category"><h3>Hematopoiesis</h3><p>Blood-regeneration medicine group.</p></div>
+<div class="med-category"><h3>Hemostasis</h3><p>Blood-clotting and bleeding-rate medicines.</p></div>
+<div class="med-category"><h3>Surgery Tools</h3><p>Surgical kits vary in suitability for wound or organ treatment.</p></div>
+</div>
+<div class="guide-note"><strong>Reading the supplied chart:</strong> levels 1, 2 and 3 indicate item tiers; medicine may appear as tablets, capsules, ampoules, injectors, tubes or vaccines. Star markers identify items sold at a medical trader in the supplied graphic, not guaranteed stock on these servers. Consult the original infographic for exact item-by-item matches; always check the server's installed version and settings.</div>
+<a class="guide-source" href="https://steamcommunity.com/workshop/browse/?appid=221100&searchtext=Terje%20Medicine" target="_blank" rel="noopener noreferrer">FIND TERJE MEDICINE ON WORKSHOP ↗</a>
+</div></section>
+<section class="guide-section" id="skills"><div class="container">
+<div class="hub-kicker">02 / PROGRESSION</div><h2>TERJE <span>SKILLS.</span></h2>
+<div class="guide-grid"><div class="guide-card"><h3>PROGRESS OVER TIME</h3><p>Terje Skills adds progression systems. Perform the relevant activities to develop skills; the exact skills and experience rates depend on how each server has configured the mod.</p></div><div class="guide-card"><h3>CHECK IN GAME</h3><p>Use the server's installed skills interface to inspect your available skill categories and progression. Ask staff if skill gains or perks appear different from another server.</p></div></div>
+<a class="guide-source" href="https://steamcommunity.com/workshop/browse/?appid=221100&searchtext=Terje%20Skills" target="_blank" rel="noopener noreferrer">FIND TERJE SKILLS ON WORKSHOP ↗</a>
+</div></section>
+<section class="guide-section" id="workbench"><div class="container">
+<div class="hub-kicker">03 / KEYCARD SYSTEM</div><h2>DNA <span>WORKBENCH.</span></h2>
+<p>Community-supplied instructions for making and using the DNA workbench to remove, replace and program keycard chips.</p>
+<div class="guide-note guide-warning"><strong>IMPORTANT:</strong> Do not place the hologram before you have every item needed to fully build the workbench. The hologram can despawn.</div>
+<div class="guide-grid">
+<div class="guide-card"><h3>01 · CRAFT THE KIT</h3><ol><li>Combine 4 sticks and 1 metal wire to craft a workbench kit.</li><li>Before placing it, obtain a soldering kit and a helping hands kit and put them in the kit's inventory.</li><li>Place the hologram only once your full material collection is ready.</li></ol></div>
+<div class="guide-card"><h3>02 · BUILD THE BENCH</h3><p>After placing the hologram, add:</p><ul><li>1 metal wire</li><li>16 bolts</li><li>5 metal sheets</li><li>13 planks</li><li>1 laptop</li><li>1 card reader</li></ul><p>Use a hammer to finish assembly. A hatchet can dismantle the finished bench or hologram.</p></div>
+<div class="guide-card"><h3>03 · REMOVE AND INSTALL CHIPS</h3><ol><li>Install a 40V battery in the bay at the top left of the workbench.</li><li>With a used keycard in your hands, look at the helping hands and place the card there.</li><li>Look at the soldering iron to remove the used chip.</li><li>Open the top-left drawer and put solder and flux in its inventory along with the new chip.</li><li>Use the soldering iron again to install the new chip.</li></ol></div>
+<div class="guide-card"><h3>04 · PROGRAM THE CARD</h3><ol><li>Place the unprogrammed card into the card reader.</li><li>Look at the laptop and select the programming option.</li><li>Find chips in lootable blister packs: hold a pack in your hands and open it, then read its name or description for the chip color.</li></ol><p>The supplied server instructions say supplies are found around the map rather than at traders. A built bench also has an in-game guide.</p></div>
+</div></div></section>
+<section class="guide-section" id="drug-running"><div class="container">
+<div class="hub-kicker">04 / MOD REFERENCE</div><h2>DRUG RUNNING <span>MOD.</span></h2>
+<div class="guide-card"><h3>COMMUNITY REFERENCE</h3><p>The server owner shared a Notion guide for their in-game drug-running mod. Refer to that guide for the mod's current mechanics, ingredients and progression. Server-specific economics and availability can differ.</p>
+<a class="guide-source" href="https://equinox-wind-322.notion.site/iM7s_Drug-Running-Mod-16670298035b804d95c9cf9b8868a99b" target="_blank" rel="noopener noreferrer">OPEN DRUG RUNNING GUIDE ↗</a></div>
+</div></section>
+<section class="guide-section" id="housing"><div class="container">
+<div class="hub-kicker">05 / CONSTRUCTION</div><h2>VAN WOODEN <span>HOUSES.</span></h2>
+<div class="guide-note"><strong>House Kit:</strong> 10 planks + 50 nails. The house totals below are supplied by the server community; confirm they are the correct version and whether kit materials count separately.</div>
+<div class="house-table-wrap"><table class="house-table"><thead><tr><th>HOUSE</th><th>NAILS</th><th>PLANKS</th><th>LOGS</th><th>STONES</th><th>WIRE</th><th>SHEETS</th></tr></thead><tbody>
+<tr><td>A</td><td>70</td><td>60</td><td>16</td><td>28</td><td>5</td><td>—</td></tr>
+<tr><td>B</td><td>50</td><td>40</td><td>12</td><td>24</td><td>6</td><td>—</td></tr>
+<tr><td>C</td><td>60</td><td>50</td><td>14</td><td>26</td><td>7</td><td>—</td></tr>
+<tr><td>D</td><td>40</td><td>30</td><td>10</td><td>22</td><td>8</td><td>—</td></tr>
+<tr><td>E</td><td>80</td><td>70</td><td>18</td><td>30</td><td>9</td><td>—</td></tr>
+<tr><td>F</td><td>90</td><td>80</td><td>20</td><td>32</td><td>10</td><td>—</td></tr>
+<tr><td>G</td><td>200</td><td>150</td><td>50</td><td>50</td><td>15</td><td>10</td></tr>
+</tbody></table></div>
+</div></section>
+<section class="guide-section" id="survival"><div class="container">
+<div class="hub-kicker">06 / ALL SURVIVORS</div><h2>STARTER <span>SURVIVAL TIPS.</span></h2>
+<div class="guide-grid">
+<div class="guide-card"><h3>STAY DRY AND WARM</h3><p>Wet clothing and poor insulation can drain your temperature and stamina. Dry off, seek shelter, and use safe heat sources.</p></div>
+<div class="guide-card"><h3>DRINK SAFELY</h3><p>Prefer known safe water sources and purify questionable water. Avoid drinking untreated water that could make your character sick.</p></div>
+<div class="guide-card"><h3>AVOID INFECTION</h3><p>Keep bandages clean, pay attention to symptoms, and learn the modded treatment rules before relying on unfamiliar medicine.</p></div>
+<div class="guide-card"><h3>PREPARE BEFORE BUILDING</h3><p>Gather your full material list first and confirm server building restrictions, territory rules and despawn behavior with staff.</p></div>
+</div>
+<div class="guide-note">These are shared tips and community-reported mod instructions, not a declaration that every featured mod is installed on every PLAIN DAYZ server. Server-specific mod lists will be published as supplied.</div>
+<div class="hub-bottom-nav"><a href="index.html#servers">← VIEW ALL FOUR SERVERS</a><a href="#main">BACK TO TOP ↑</a></div>
+</div></section></main>
+<footer class="hub-footer"><div class="container"><span>PLAIN DAYZ · COMMUNITY FIELD GUIDE</span><a href="index.html">RETURN HOME ↗</a></div></footer>
+</body></html>
