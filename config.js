@@ -19,37 +19,64 @@ window.PLAIN_DAYZ_CONFIG = {
     support: ""  // e.g. "https://discord.com/channels/..." or a help-desk link
   },
 
-  // Add, remove, or edit server objects. No fake live statuses are shown.
+  // Every server links to its own page. The shared tips guide is at guides.html.
+  // No fake live status or unverified game modes are shown.
   servers: [
+    {
+      name: "ARSTEINEN",
+      slug: "arsteinen",
+      page: "arsteinen.html",
+      subtitle: "PLAIN DAYZ SERVER",
+      map: "ARSTEINEN",
+      playstyle: "SERVER DETAILS COMING SOON",
+      status: "ADDRESS AVAILABLE",
+      description: "Start your journey on Arsteinen. Explore the server hub, copy the direct connection address, or open the shared survivor guides.",
+      features: ["DIRECT CONNECTION", "SHARED TIPS & TRICKS", "MOD INFO"],
+      address: "208.115.206.252",
+      port: "2680",
+      mods: [] // Add exact server mod names and Workshop URLs when confirmed.
+    },
     {
       name: "BANOV",
       slug: "banov",
       page: "banov.html",
-      tips: [], // Add { title: "Tip title", description: "Tip details" }
-      mods: [], // Add "Mod name" or { name: "Mod name", url: "https://steamcommunity.com/sharedfiles/filedetails/?id=..." }
       subtitle: "PLAIN DAYZ SERVER",
       map: "BANOV",
-      playstyle: "GAMEPLAY DETAILS COMING SOON",
-      status: "ADDRESS AVAILABLE", // not a real-time online status
-      description: "Explore the Banov server. Use the connection address below to find us in DayZ. More details will be announced soon.",
-      features: ["DIRECT CONNECTION", "MORE DETAILS SOON"],
+      playstyle: "SERVER DETAILS COMING SOON",
+      status: "ADDRESS AVAILABLE",
+      description: "Explore Banov with PLAIN DAYZ. Visit the server hub for mod information and community guides.",
+      features: ["DIRECT CONNECTION", "SHARED TIPS & TRICKS", "MOD INFO"],
       address: "5.226.142.46",
-      port: "2491"
+      port: "2491",
+      mods: []
+    },
+    {
+      name: "DEERISLE",
+      slug: "deerisle",
+      page: "deerisle.html",
+      subtitle: "PLAIN DAYZ SERVER",
+      map: "DEERISLE",
+      playstyle: "SERVER DETAILS COMING SOON",
+      status: "ADDRESS AVAILABLE",
+      description: "Head to DeerIsle and prepare for your next survival story. Use the dedicated server hub for connection details and guides.",
+      features: ["DIRECT CONNECTION", "SHARED TIPS & TRICKS", "MOD INFO"],
+      address: "208.115.248.157",
+      port: "2302",
+      mods: []
     },
     {
       name: "ONFORIN",
       slug: "onforin",
       page: "onforin.html",
-      tips: [],
-      mods: [],
       subtitle: "PLAIN DAYZ SERVER",
       map: "ONFORIN",
-      playstyle: "GAMEPLAY DETAILS COMING SOON",
-      status: "ADDRESS AVAILABLE", // not a real-time online status
-      description: "Explore the Onforin server. Use the connection address below to find us in DayZ. More details will be announced soon.",
-      features: ["DIRECT CONNECTION", "MORE DETAILS SOON"],
+      playstyle: "SERVER DETAILS COMING SOON",
+      status: "ADDRESS AVAILABLE",
+      description: "Explore Onforin with PLAIN DAYZ. Find the direct connection address, future mod information and a shared survival guide.",
+      features: ["DIRECT CONNECTION", "SHARED TIPS & TRICKS", "MOD INFO"],
       address: "213.166.84.4",
-      port: "2302"
+      port: "2302",
+      mods: []
     }
   ],
 
