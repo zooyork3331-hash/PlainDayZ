@@ -13,10 +13,11 @@ window.PLAIN_DAYZ_CONFIG = {
     footerText: "Built by survivors. For survivors."
   },
 
-  // Paste the complete https:// link between the quotes.
+  // Shared community links used throughout the website.
   links: {
-    discord: "", // e.g. "https://discord.gg/yourinvite"
-    support: ""  // e.g. "https://discord.com/channels/..." or a help-desk link
+    discord: "https://discord.gg/hCGqqxbfHd",
+    support: "https://discord.gg/hCGqqxbfHd", // Players can open a support ticket after joining Discord.
+    donate: "https://paypal.me/TrIM81"
   },
 
   // Every server links to its own page. The shared tips guide is at guides.html.
