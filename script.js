@@ -60,6 +60,9 @@
   setupLink('events-discord', links.discord, 'OPEN DISCORD <span aria-hidden="true">↗</span>', 'DISCORD LINK SOON ↗');
   setupLink('community-discord', links.discord, 'JOIN OUR DISCORD <span aria-hidden="true">↗</span>', 'DISCORD LINK SOON ↗');
   setupLink('support-link', links.support, 'CONTACT SUPPORT <span aria-hidden="true">↗</span>', 'SUPPORT LINK SOON ↗');
+  setupLink('nav-donate', links.donate, 'DONATE <span aria-hidden="true">↗</span>', 'DONATE SOON ↗');
+  setupLink('community-donate', links.donate, 'SUPPORT THE SERVERS <span aria-hidden="true">↗</span>', 'DONATE SOON ↗');
+  setupLink('footer-donate', links.donate, 'DONATE ↗', 'DONATE SOON ↗');
 
   const servers = Array.isArray(config.servers) ? config.servers : [];
   const serverList = byId('server-list');
