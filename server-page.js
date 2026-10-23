@@ -64,21 +64,6 @@
     }
   });
 
-  const tipsList = byId('tips-list');
-  const tips = Array.isArray(server.tips) ? server.tips : [];
-  if (!tips.length) {
-    empty(tipsList, 'TIPS & TRICKS COMING SOON', 'Guides and advice for this server will be added here as they become available.');
-  } else {
-    tips.forEach(entry => {
-      const card = create('article', 'hub-info-card');
-      const heading = typeof entry === 'string' ? entry : entry.title || 'SURVIVAL TIP';
-      const body = typeof entry === 'string' ? '' : entry.description || entry.text || '';
-      card.append(create('h3', '', heading));
-      if (body) card.append(create('p', '', body));
-      tipsList.append(card);
-    });
-  }
-
   const modsList = byId('mods-list');
   const mods = Array.isArray(server.mods) ? server.mods : [];
   if (!mods.length) {
