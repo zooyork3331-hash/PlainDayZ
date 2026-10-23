@@ -295,3 +295,11 @@ h1,h2,h3,p{overflow-wrap:break-word}
 .server-card-clickable:focus-visible{outline:2px solid var(--fire-light);outline-offset:4px;border-color:var(--fire)}
 .server-details-link{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:19px;padding:14px 17px;border:1px solid rgba(244,106,46,.65);color:var(--fire-light);font:800 15px var(--font-display);letter-spacing:1.2px;transition:background .2s,color .2s}
 .server-details-link:hover,.server-details-link:focus-visible{background:var(--fire);color:#12100e}
+
+/* Donation link; keep responsive navigation readable */
+.primary-nav{gap:clamp(9px,1.45vw,20px)}
+.primary-nav>a{letter-spacing:1px;font-size:13px}
+.primary-nav>a.nav-donate{color:var(--fire-light);border:1px solid rgba(244,106,46,.45);padding:12px 13px;white-space:nowrap}
+.primary-nav>a.nav-donate:hover{border-color:var(--fire);background:rgba(244,106,46,.12)}
+@media(min-width:861px) and (max-width:1120px){.primary-nav{gap:10px}.primary-nav>a{font-size:12px;letter-spacing:.55px}.primary-nav>a.nav-discord{padding:13px 12px}.nav-discord span{margin-left:5px}}
+@media(max-width:860px){.primary-nav>a.nav-donate{align-self:flex-start;margin-top:10px;border-bottom:1px solid rgba(244,106,46,.45);padding:13px 18px}}
