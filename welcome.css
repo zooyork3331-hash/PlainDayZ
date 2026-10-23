@@ -1,0 +1,83 @@
+/* PLAIN DAYZ welcome & rules page */
+.welcome-body{background:#0a0b0c}
+.welcome-header .header-inner{gap:18px}
+.welcome-top-nav{display:flex;flex-wrap:wrap;align-items:center;gap:25px}
+.welcome-top-nav a{color:#c6c0b9;font:800 14px var(--font-display);letter-spacing:1.3px}
+.welcome-top-nav a:hover,.welcome-top-nav a[aria-current="page"]{color:var(--fire-light)}
+.welcome-hero{position:relative;overflow:hidden;background:radial-gradient(ellipse at 85% 40%,rgba(165,55,18,.30),transparent 52%),linear-gradient(105deg,#111314,#21130e)}
+.welcome-hero:before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(120deg,transparent 0,transparent 30px,rgba(244,106,46,.018) 31px,transparent 32px);pointer-events:none}
+.welcome-hero-grid{position:absolute;right:0;top:0;height:100%;width:45%;background:url("assets/plain-dayz-logo.webp") center/contain no-repeat;opacity:.13;mix-blend-mode:screen;pointer-events:none}
+.welcome-hero-inner{padding:74px 0 88px;position:relative}
+.welcome-breadcrumb{display:flex;gap:13px;color:#b0a29a;font:800 11px var(--font-body);letter-spacing:2px;margin-bottom:43px}
+.welcome-breadcrumb a{color:var(--fire-light)}
+.welcome-eyebrow{font:800 12px var(--font-body);letter-spacing:2px;color:var(--fire-light);display:flex;align-items:center;gap:10px}
+.welcome-line{display:inline-block;width:26px;height:2px;background:var(--fire)}
+.welcome-hero h1{font:900 clamp(66px,8vw,124px)/.86 var(--font-display);max-width:880px;margin:22px 0 28px}
+.welcome-hero h1 span{color:var(--fire);display:block}
+.welcome-hero-lead{max-width:660px;color:#cfc4bd;font-size:17px;line-height:1.75}
+.welcome-hero-lead strong{color:#fff}
+.welcome-tags{display:flex;flex-wrap:wrap;gap:9px;margin:25px 0 30px}
+.welcome-tags span{background:#29201d;border:1px solid #6c4434;color:#edb397;padding:7px 11px;font:800 11px var(--font-body);letter-spacing:1px}
+.welcome-hero-actions,.welcome-help-actions{display:flex;flex-wrap:wrap;gap:12px}
+.welcome-pve-banner{background:#ec662c;color:#1d0e07}
+.welcome-pve-inner{display:flex;align-items:center;gap:20px;padding:19px 0}
+.welcome-pve-icon{font-size:40px;line-height:1}
+.welcome-pve-inner strong{font:900 clamp(20px,2.8vw,29px) var(--font-display);letter-spacing:.4px}
+.welcome-pve-inner p{font-size:13px;font-weight:700;margin:2px 0}
+.welcome-pve-tag{margin-left:auto;border:2px solid #5b2511;padding:6px 12px;font:900 22px var(--font-display);white-space:nowrap}
+.welcome-content{display:grid;grid-template-columns:240px minmax(0,1fr);gap:55px;padding-top:82px;padding-bottom:90px}
+.welcome-sidebar{position:sticky;top:26px;align-self:start;background:#151617;border:1px solid #383330;padding:19px}
+.welcome-sidebar-label{color:#f58b52;font:800 11px var(--font-body);letter-spacing:1.8px;margin-bottom:15px}
+.welcome-sidebar>a{display:flex;align-items:center;gap:12px;border-top:1px solid #34312f;padding:15px 0;color:#ddd5cf;font:800 16px var(--font-display);letter-spacing:.6px}
+.welcome-sidebar>a:hover{color:#ff9550}
+.welcome-sidebar>a span{color:var(--fire);font-size:12px}
+.welcome-sidebar-foot{font-size:12px;color:#9a8d85;border-top:1px solid #34312f;padding-top:16px}
+.welcome-section{scroll-margin-top:25px;padding-bottom:64px;margin-bottom:68px;border-bottom:1px solid #433730}
+.welcome-last{border:0;margin:0;padding:0}
+.welcome-section-heading{margin-bottom:28px}
+.welcome-number{color:#ff9550;font:800 12px var(--font-body);letter-spacing:2px}
+.welcome-section-heading h2{font:900 clamp(51px,6vw,80px)/.88 var(--font-display);margin:12px 0 12px}
+.welcome-section-heading h2 em{color:var(--fire);font-style:normal}
+.welcome-section-heading>p{max-width:700px;color:#bbb2ab;font-size:15px;margin:0}
+.welcome-emphasis{display:flex;gap:17px;border:1px solid #aa4729;background:linear-gradient(100deg,#351c14,#211b1a);padding:21px;margin:25px 0}
+.welcome-emphasis>span{color:#ff824a;font:900 37px/1 var(--font-display)}
+.welcome-emphasis strong{font:900 25px var(--font-display);color:#fff}
+.welcome-emphasis p{font-size:14px;color:#d1bbb0;margin:4px 0 0}
+.welcome-emphasis-neutral{border-color:#5e473b}
+.welcome-rule-list{padding:0;margin:0;list-style:none;counter-reset:rule}
+.welcome-rule-list li{position:relative;counter-increment:rule;padding:16px 0 18px 52px;border-bottom:1px solid #353331;min-height:70px}
+.welcome-rule-list li:before{content:counter(rule,decimal-leading-zero);position:absolute;left:0;top:19px;color:#e9743d;font:900 21px var(--font-display)}
+.welcome-rule-list li strong{display:block;font:800 21px var(--font-display);letter-spacing:.2px}
+.welcome-rule-list li p{color:#b5ada7;font-size:14px;line-height:1.7;margin:4px 0 0}
+.welcome-minor-title{font:900 26px var(--font-display);letter-spacing:.8px;margin:30px 0 15px}
+.welcome-distance-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}
+.welcome-distance{background:linear-gradient(150deg,#302018,#1a1b1c);border:1px solid #624434;padding:18px}
+.welcome-distance strong{display:block;color:#ff8850;font:900 52px/.95 var(--font-display)}
+.welcome-distance strong span{font-size:24px}
+.welcome-distance>span{display:block;color:#bdb0a8;font:800 12px var(--font-body);letter-spacing:.6px;margin-top:10px;line-height:1.55}
+.welcome-size-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-bottom:18px}
+.welcome-size{padding:22px;background:#1a1b1c;border:1px solid #5e4537}
+.welcome-size>span{color:#f88c58;font:800 11px var(--font-body);letter-spacing:1.6px}
+.welcome-size strong{display:block;font:900 57px var(--font-display);margin:5px 0;color:#fff}
+.welcome-size p{font-size:13px;color:#bcb1a8;margin:0}
+.welcome-vehicle-highlight{display:flex;align-items:center;gap:28px;padding:25px;margin-bottom:25px;background:#281c15;border:1px solid #875033}
+.welcome-vehicle-highlight>div{min-width:150px;border-right:1px solid #725243;padding-right:24px}
+.welcome-vehicle-highlight>div>span{display:block;color:#e2a68d;font:800 10px var(--font-body);letter-spacing:1px}
+.welcome-vehicle-highlight strong{display:block;font:900 78px/.9 var(--font-display);color:#ff8850;margin:10px 0 2px}
+.welcome-vehicle-highlight p{color:#d1c3ba;margin:0;font-size:14px}
+.welcome-help-panel{position:relative;overflow:hidden;background:linear-gradient(120deg,#2b1c16,#171819);border:1px solid #714834;padding:37px}
+.welcome-help-decor{position:absolute;right:20px;top:-30px;font:900 210px var(--font-display);color:#f46a2e;opacity:.10}
+.welcome-help-panel h3{position:relative;font:900 clamp(36px,4vw,55px) var(--font-display);margin:0 0 15px}
+.welcome-help-panel p{position:relative;color:#cfc1b7;font-size:14px;line-height:1.9}
+.welcome-help-actions{margin-top:25px;position:relative}
+.welcome-signoff{font:900 clamp(27px,4vw,48px) var(--font-display);margin:35px 0 0}
+.welcome-signoff span{color:#ff8850}
+.welcome-bottom-cta{background:#211611;border-top:1px solid #6c4633;padding:50px 0}
+.welcome-bottom-inner{display:flex;justify-content:space-between;align-items:center;gap:25px}
+.welcome-bottom-inner h2{font:900 clamp(37px,5vw,63px) var(--font-display);margin:10px 0}
+.welcome-bottom-inner h2 em{color:var(--fire);font-style:normal}
+.welcome-bottom-inner p{color:#bfb0a6;margin:0}
+.welcome-footer .container{display:flex;justify-content:space-between;gap:20px;align-items:center;flex-wrap:wrap}
+.welcome-footer .container div{display:flex;gap:20px;flex-wrap:wrap}
+@media(max-width:900px){.welcome-content{grid-template-columns:1fr;gap:25px}.welcome-sidebar{position:static;display:flex;flex-wrap:wrap;gap:10px;align-items:center}.welcome-sidebar-label{width:100%;margin:0}.welcome-sidebar>a{border:1px solid #40332c;padding:8px 12px}.welcome-sidebar-foot{width:100%;border:0}.welcome-distance-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.welcome-hero-grid{opacity:.07}}
+@media(max-width:650px){.welcome-header .header-inner{height:auto;min-height:84px;padding:13px 0;flex-wrap:wrap}.welcome-top-nav{width:100%;gap:15px}.welcome-top-nav a{font-size:12px}.welcome-hero-inner{padding:48px 0 65px}.welcome-hero h1{font-size:clamp(60px,13vw,88px)}.welcome-hero-lead{font-size:15px}.welcome-content{padding:45px 0 65px}.welcome-pve-inner{gap:11px}.welcome-pve-icon{font-size:27px}.welcome-pve-tag{display:none}.welcome-pve-inner strong{font-size:21px}.welcome-section{padding-bottom:48px;margin-bottom:47px}.welcome-last{margin-bottom:0}.welcome-distance-grid{grid-template-columns:1fr}.welcome-distance strong{font-size:45px}.welcome-size strong{font-size:48px}.welcome-vehicle-highlight{gap:17px;padding:19px}.welcome-vehicle-highlight>div{min-width:96px;padding-right:14px}.welcome-vehicle-highlight strong{font-size:64px}.welcome-hero-actions,.welcome-help-actions{flex-direction:column}.welcome-hero-actions .btn,.welcome-help-actions .btn{justify-content:center}.welcome-bottom-inner{flex-direction:column;align-items:flex-start}.welcome-bottom-inner .btn{width:100%;justify-content:center}.welcome-help-panel{padding:26px}}
